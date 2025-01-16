@@ -1,5 +1,4 @@
-# tpwebscraping
-
+# TP Web Scraping
 
 ## Justification des choix
 
@@ -47,68 +46,73 @@
 ### **Design visuel**
 - Couleurs de fond choisies pour refléter une ambiance moderne et immersive.
 - Mise en page claire et cartes uniformes pour chaque champion, facilitant la comparaison des données.
-Instructions d'installation et d'exécution
-Suivez ces étapes pour exécuter le projet :
 
-1. Cloner le projet
-   
+---
+
+## Instructions d'installation et d'exécution
+
+### **Suivez ces étapes pour exécuter le projet :**
+
+### **1. Cloner le projet**
 Clonez le dépôt en local sur votre machine avec la commande suivante :
+```bash
 git clone https://github.com/jdjerroudstu/tpwebscraping.git
 
-3. Accéder au dossier du projet
-   
+### **2. Accéder au dossier du projet**
 Une fois le projet cloné, accédez au répertoire principal avec cette commande :
+```bash
 cd legendsscraper
 
-4. Préparer le projet
+### **3. Préparer le projet**
 Avant de lancer le scraper, vous pouvez supprimer les fichiers générés lors d'une exécution précédente pour éviter les conflits :
-
-legends.json
-legends.csv
-legends.html
-
+- legends.json
+- legends.csv
+- legends.html
 Supprimez-les manuellement ou utilisez la commande suivante dans votre terminal :
-$ rm legends.json legends.csv legends.html
+```bash
+rm legends.json legends.csv legends.html
 
-5. Exécuter le scraper
+### **4. Exécuter le scraper**
 Lancez le spider legends pour collecter les données et générer les fichiers nécessaires. Utilisez la commande suivante dans le terminal :
+```bash
+scrapy crawl legends
 
-$scrapy crawl legends
+### **5. Visualiser les résultats**
 
-7. Visualiser les résultats
 Une fois l'exécution terminée, les fichiers suivants seront créés dans le répertoire principal du projet :
 
-legends.json : Contient les données extraites au format JSON.
-legends.csv : Contient les données extraites au format CSV.
-legends.html : Une page HTML stylisée avec pagination pour afficher les informations des champions.
+- legends.json : Contient les données extraites au format JSON.
+- legends.csv : Contient les données extraites au format CSV.
+- legends.html : Une page HTML stylisée avec pagination pour afficher les informations des champions.
 
 
-7. Ouvrez le fichier legends.html dans un navigateur pour visualiser les résultats :
+### **6. Ouvrir le fichier HTML**
+Ouvrez le fichier **legends.html** dans un navigateur pour visualiser les résultats :
 
-open legends.html  # macOS
+- # macOS
+open legends.html
 
-xdg-open legends.html  # Linux
+- # Linux
+xdg-open legends.html
 
-start legends.html  # Windows
+- # Windows
+start legends.html
 
-8. Fonctionnalités du projet
-
-Scraping avec Scrapy :
-
-- Extraction des informations des champions : nom, rôle, type, vitesse de déplacement, portée d'attaque.
-Gestion des données manquantes avec des valeurs par défaut.
-
-- Pipelines de validation :
-Vérification et traitement des données avant leur stockage.
-
-- Exportation multi-format :
-Génération automatique de fichiers JSON, CSV et HTML.
-
-- Pagination dans HTML :
-Affichage des champions par groupes de 12 avec navigation fluide.
+Fonctionnalités du projet
+- Scraping avec Scrapy
+   - Extraction des informations des champions : nom, rôle, type, vitesse de déplacement, portée d'attaque.
+   - Gestion des données manquantes avec des valeurs par défaut.
+- Pipelines de validation
+   - Vérification et traitement des données avant leur stockage.
+- Exportation multi-format
+   - Génération automatique de fichiers JSON, CSV et HTML.
+- Pagination dans HTML
+   -Affichage des champions par groupes de 12 avec navigation fluide.
 
 - Exigences système
-Python 3.8 ou plus récent
+   - Python 3.8 ou plus récent
+- Auteurs
+   - Juda Djerroud
+   - Said Mekaouar
 
-Auteurs
-Juda Djerroud | Said Mekaouar
+
