@@ -25,9 +25,10 @@ $ rm legends.json legends.csv legends.html
 
 5. Exécuter le scraper
 Lancez le spider legends pour collecter les données et générer les fichiers nécessaires. Utilisez la commande suivante dans le terminal :
+
 $scrapy crawl legends
 
-6. Visualiser les résultats
+7. Visualiser les résultats
 Une fois l'exécution terminée, les fichiers suivants seront créés dans le répertoire principal du projet :
 
 legends.json : Contient les données extraites au format JSON.
