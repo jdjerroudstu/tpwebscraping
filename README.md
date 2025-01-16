@@ -1,5 +1,52 @@
 # tpwebscraping
 
+
+## Justification des choix
+
+### **Technologies utilisées**
+1. **Scrapy** : 
+   - Puissance et flexibilité pour extraire les données d'un site web.
+   - Gestion intégrée des requêtes AJAX et des processus asynchrones.
+   - Pipelines pratiques pour valider, transformer et exporter les données.
+
+2. **HTML** :
+   - Utilisé pour générer un fichier de visualisation facile à utiliser et accessible via un navigateur.
+   - Stylisation avec CSS pour améliorer l'esthétique de la page.
+
+3. **JSON et CSV** :
+   - Formats de fichiers standard pour l'exportation des données.
+   - JSON pour faciliter l'intégration avec d'autres outils ou applications.
+   - CSV pour permettre l'analyse avec des outils tels qu'Excel ou Pandas.
+
+---
+
+### **Choix des données extraites**
+1. **Nom, rôle, type** :
+   - Ces informations sont fondamentales pour identifier et catégoriser chaque champion.
+
+2. **Portée d'attaque (Attack Range)** :
+   - Donnée essentielle pour comprendre le style de combat du champion.
+
+3. **Vitesse de déplacement (Move Speed)** :
+   - Permet de comparer la mobilité des champions dans le jeu.
+
+---
+
+### **Pagination dans HTML**
+- Une interface paginée améliore la lisibilité lorsque le nombre de champions affichés devient important.
+- La navigation fluide rend l'expérience utilisateur plus agréable.
+
+---
+
+### **Validation des données**
+- L'utilisation de pipelines permet de garantir l'exactitude et la cohérence des données extraites.
+- Traitement des valeurs manquantes pour éviter les incohérences dans les fichiers générés.
+
+---
+
+### **Design visuel**
+- Couleurs de fond choisies pour refléter une ambiance moderne et immersive.
+- Mise en page claire et cartes uniformes pour chaque champion, facilitant la comparaison des données.
 Instructions d'installation et d'exécution
 Suivez ces étapes pour exécuter le projet :
 
